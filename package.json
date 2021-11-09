@@ -2,23 +2,21 @@
   "name": "pastebin-scraper",
   "version": "1.0.1",
   "description": "A simple library that scrapes data about pastes from Pastebin",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "prepublish": "npm run build",
     "pretest": "yalc publish && yalc add pastebin-scraper",
-    "test": "node tryit.js"
+    "test": "node tryit.js",
+    "tsconfig": " cd node_modules/.bin/ && tsc --init",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/exoticchild-alt/pastebin-scraper.git"
   },
-  "keywords": [
-    "pastebin",
-    "scraper",
-    "web",
-    "cheerio",
-    "axios"
-  ],
-  "author": "",
+  "keywords": ["pastebin", "scraper", "web", "cheerio", "axios"],
+  "author": "https://github.com/exoticchild",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/exoticchild-alt/pastebin-scraper/issues"
@@ -30,6 +28,8 @@
     "pastebin-scraper": "file:.yalc/pastebin-scraper"
   },
   "devDependencies": {
+    "@types/node": "^16.11.7",
+    "typescript": "^4.4.4",
     "yalc": "^1.0.0-pre.53"
   }
 }
