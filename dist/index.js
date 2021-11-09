@@ -9,10 +9,10 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.scrape = void 0;
+exports.Scrape = void 0;
 const cheerio = require("cheerio");
 const axios = require('axios').default;
-function scrape(url) {
+function Scrape(url) {
     return __awaiter(this, void 0, void 0, function* () {
         const response = yield axios.get(url);
         const $ = cheerio.load(response.data);
@@ -27,4 +27,4 @@ function scrape(url) {
         };
     });
 }
-exports.scrape = scrape;
+exports.Scrape = Scrape;

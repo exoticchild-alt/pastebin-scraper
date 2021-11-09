@@ -1,6 +1,6 @@
 import cheerio = require('cheerio');
 const axios = require('axios').default;
-export async function scrape(url: string) {
+export async function Scrape(url: string) {
     const response = await axios.get(url);
     const $ = cheerio.load(response.data);
     return {

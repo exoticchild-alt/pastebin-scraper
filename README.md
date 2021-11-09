@@ -16,10 +16,10 @@ First, to be able to use the library, install it first using the following comma
 npm install pastebin-scraper --save
 ```
 
-This library is a promise-based library, so you first must require it in your code and then import the function `scrape`:
+This library is a promise-based library, so you first must require it in your code and then import the function `Scrape`:
 ```javascript
-const {scrape} = require('pastebin-scraper');
-scrape('https://pastebin.com/4Z489JeC')
+const {Scrape} = require('pastebin-scraper');
+Scrape('https://pastebin.com/4Z489JeC')
 .then(res => console.log(res))
 ```
 

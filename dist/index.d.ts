@@ -1,4 +1,4 @@
-export declare function scrape(url: string): Promise<{
+export declare function Scrape(url: string): Promise<{
     title: string;
     views: string;
     rawData: string;
