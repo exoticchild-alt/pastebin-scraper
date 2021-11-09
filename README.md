@@ -11,18 +11,19 @@
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 ### *Usage* ###
-First, to be able to use the library, install it first using the following command
+First, to be able to use the library, install it first using the following command:
+```bash
+npm install pastebin-scraper --save
 ```
-$ npm install pastebin-scraper --save
-```
-This library is a promise-based library, so you first must require it in your code and then use it somewhat like this.
+
+This library is a promise-based library, so you first must require it in your code and then import the function `scrape`:
 ```javascript
-const {scrape} = require('pastebin-scraper')
+const {scrape} = require('pastebin-scraper');
 scrape('https://pastebin.com/4Z489JeC')
 .then(res => console.log(res))
 ```
 
-Output looks something like this
+Output will be an object, which can be accessed using properties.
 ```bash
 {
   title: 'Pastebin Scraper',
@@ -34,6 +35,7 @@ Output looks something like this
   language: 'text'
 }
 ```
+
 You can run this test this library in the tryit.js folder if you are, for example, running this library in GitHub or Replit.
 <br>
-*v1.0.1*
+*v1.1.0*
