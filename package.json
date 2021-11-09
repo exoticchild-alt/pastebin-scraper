@@ -4,13 +4,20 @@
   "description": "A simple library that scrapes data about pastes from Pastebin",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "yalc publish && yalc add pastebin-scraper",
+    "test": "node tryit.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/exoticchild-alt/pastebin-scraper.git"
   },
-  "keywords": ["pastebin", "scraper", "web", "cheerio", "axios"],
+  "keywords": [
+    "pastebin",
+    "scraper",
+    "web",
+    "cheerio",
+    "axios"
+  ],
   "author": "",
   "license": "MIT",
   "bugs": {
@@ -18,7 +25,11 @@
   },
   "homepage": "https://github.com/exoticchild-alt/pastebin-scraper#readme",
   "dependencies": {
-    "axios": "^0.21.1",
-    "cheerio": "^1.0.0-rc.10"
+    "axios": "^0.24.0",
+    "cheerio": "^1.0.0-rc.10",
+    "pastebin-scraper": "file:.yalc/pastebin-scraper"
+  },
+  "devDependencies": {
+    "yalc": "^1.0.0-pre.53"
   }
 }
