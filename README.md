@@ -38,4 +38,4 @@ Output will be an object, which can be accessed using properties.
 
 You can run this test this library in the tryit.js folder if you are, for example, running this library in GitHub or Replit.
 <br>
-*v1.1.0*
+*v2.0.0*
